@@ -1,0 +1,13 @@
+matrix data structure is two dimension array arranged in rows and columns
+It is commonly used to represent mathematical matrices.
+it is used in various fields like mathematics,computer graphics and data processing.
+matrix is otherwise known as 2DArray or grid
+representation of a matrix:
+ the cell a[0][0] is the first element of the first row and first column.
+
+            columns-->
+rows        00 01 02
+|           10 11 12
+|           20 21 22
+
+if we dont allocate value in array it will take default value for primitive datatypes is 0 and non primitive as null
