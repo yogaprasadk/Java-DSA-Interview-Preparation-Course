@@ -1,76 +1,45 @@
 package com.yogaprasad.introduction;
 
-public class Wrapperclass {
+public class wrapper {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        swap(a,b);
-        System.out.println(a +" "+ b);
-        final int c = 4;
-        //c=5; // here c cant be modified because c remains constant of using final
+        //primitive datatypes can be created using new keyword is called wrapper class.
 
-        /*
-        PRIMITIVE DATATYPES CANT BE MODIFIED WHILE USING WITH FINAL KEYWORD
-        NON PRIMITIVE DATATYPES CAN BE MODIFIED WHILE USING WITH FINAL KEYWORD but You cant reassign it
-         */
+        Integer a  = 45;// it is an object
+        int b = 4;
+        int c = 7;
+        swap(b,c);
+        System.out.println(a +" "+b);
+        // why it don't swap because java don't use pass by reference it can be passed by using pass by value.
+        // In wrapper class also it don't get swap because the wrapper classes referencing to the final keyword.
+        //final keyword is used to prevent content from it to be modified.you can make it like constant in javascript.
+        // when the datatype is in primitive using final keyword you cant be modified.
+        // ex: final int INCREASE = 20;
+        final int base = 3;
+       // base = 5;//it will give error
+        // when you used to declare  final with variable it needs to be initialized.
 
-        final Final A = new Final("Yoga");
-        // you can do like this
-        A.name = "YP";
-        //but you cant do like this when class is final
-        A = new Final("dasdasd");
-
-        //but you can do like this when class is not final
-        A = new Final("gsdgsdg");
     }
-
-    static void swap(int a,int b) {
+    static void swap(int a,int b){
         int temp = a;
         a = b;
         b = temp;
     }
-
-
-//    } here a is accessible only within this scope
+    A n = new A("kunal");
+    // you can use final keyword for non primitive datatypes.We can make change in value but can be reassigned.
+    // final A st = new A();
+    //st.name = "yo" //.We can make change in value
+    //st = s; //can't be reassigned.
 }
-/*
-why it dont swap?
+// the wrapper class has so many properties and functions.
 
-because in java there is no pass by reference there is only pass by value
-in primitive there is only pass by value
- */
-
-//   use Wrapper class
-/*
-
-    Integer a = 34;
-    Integer b = 44;
-
-    swap(a,b);
-    system.out.print(a + "" + b);
-// here why not swapped because here a is considered as final (final is means constant)
-    static void swap(Integer a,Integer b)
-    {
-        int temp = a;
-        a = b;
-        b = temp;
-
-    }
- */
-
-class Final{
-    final int num = 10;
+class A{
+    //final int a; // here it will give error like value isn't initialized.
+    // You need to initialize value.
+    final int a = 10;
     String name;
-    // constructor
-    public Final(String name){
-        this.name = name;
+    //shortcut for creating constructor in intellij idea ide - Press alt and enter at same time
+    public A(String name){
+
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        System.out.println("Print");
-    }
 }
-
-
-// what is garbage collector?
