@@ -3,7 +3,7 @@ package staticexample;
 public class singletonclass {
     //you have a class and only want to have one instance need to create for the class.
     // one instance need to be created => singleton classes.
-    // if you create an object and you dont allow people to create object.hence you dont allow to use the constructor,
+    // if you create an object , you don't allow people to create object.hence you don't allow to use the constructor,
 
     //singleton is a class where you can only you can create one object for it.
 

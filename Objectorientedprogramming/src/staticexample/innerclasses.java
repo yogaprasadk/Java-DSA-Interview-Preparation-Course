@@ -27,7 +27,7 @@ public class innerclasses {
     }
 
     public static void main(String[] args) {
-            Test a = new Test("K"); // here it is giving error because the class is in non-static method.
+          Test a = new Test("K"); // here it is giving error because the class is in non-static method.
             Test b = new Test("P");
             System.out.println(a.name);
             System.out.println(b.name);

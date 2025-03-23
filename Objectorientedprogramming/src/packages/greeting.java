@@ -22,4 +22,4 @@ public class greeting {
 hierarchical manner means stored folder inside the folder
  */
 
-//how does java know to look the file for packages? - Ans:  using  Access modifier or Access Specifier and import method.
+//how does java know to look the file for packages? - Answer:  using  Access modifier or Access Specifier and import method.

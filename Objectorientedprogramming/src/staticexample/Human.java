@@ -17,7 +17,7 @@ public class Human {
         // when use static here for instance variable in the constructor use this keyword for references or instead of this use class name to it.
 //         Human.population = population + 1;
          // for static variables use this
-         this.population  = population + 1;
+          Human.population  = population + 1;
     }
     // what if there is some set of properties that is common to human beings - population
     //the properties of population doesn't depend on object

@@ -39,7 +39,7 @@ public class staticvarandmethods {
     // you can use static method inside the instance method.
     /*
     for example:
-    static void nonstaticgreeting(){
+    void nonstaticgreeting(){
         staticgreeting();
     }
      */
